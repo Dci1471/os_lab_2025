@@ -2,6 +2,18 @@
 
 void RevertString(char *str)
 {
-	// your code here
+    char *end = str;
+    while (*end) {
+        ++end;
+    }
+    --end;                            
+    char *start = str;
+    while (start < end) {
+        char tmp = *start;
+        *start = *end;
+        *end = tmp;
+        ++start;
+        --end;
+    }
 }
 
