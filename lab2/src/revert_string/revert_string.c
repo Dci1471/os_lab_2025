@@ -13,7 +13,7 @@ void RevertString(char *str)
         *start = *end;
         *end = tmp;
         ++start;
-        --end;
+        --end;h
     }
 }
 
